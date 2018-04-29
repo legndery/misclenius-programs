@@ -26,6 +26,7 @@ function Solver(inputs) {
     this.solve = function () {
         var inp = this.inputs;
         inp.splice(0, 1);
+        inp = inp.sort(function(a, b){return b-a})
         for (var i = 0; i < inp.length; i++) {
             var level = void 0,
                 costForLevel = void 0;
